@@ -30,10 +30,10 @@ Você pode jogar o Jogo do Número Secreto acessando este link:
   Utilizei a função `Math.random()` para gerar um número aleatório entre 1 e 10. Esse número é convertido para inteiro com `parseInt()`.
   
 - **Controle de Repetição:**  
-  O número gerado é armazenado em um array para garantir que ele não se repita enquanto o usuário clica no botão de "Novo Jogo". Quando o array acumula 10 números (ou seja, todos os números de 1 a 10 foram gerados), ele é resetado para começar a contagem do zero.
+  O número gerado é armazenado em um array para garantir que, ao iniciar um novo jogo, o JavaScript selecione um número diferente daquele escolhido anteriormente. Assim, cada clique no botão de "Novo Jogo" resulta na geração de um novo número, sem repetições até que       todos os números de 1 a 10 tenham sido utilizados. Quando o array acumula os 10 números, ele é automaticamente resetado, permitindo que a contagem comece do zero novamente.
   
 - **Feedback de Voz:**  
-  Utilizei o método `responsiveVoice.speak` para dar feedback auditivo, fazendo com que o texto exibido na tela seja falado em voz alta com uma voz configurada para "Brazilian Portuguese Female" e taxa de 1.2.
+  Utilizei o método `responsiveVoice.speak` para dar feedback auditivo, fazendo com que o texto exibido na tela seja falado em voz alta com uma voz configurada para "Brazilian Portuguese Female" em velocidade de 1.2.
 
 - **Fluxo do Jogo:**  
   Ao acertar o número, o jogo exibe uma mensagem de sucesso e informa a quantidade de tentativas utilizadas. Se o palpite estiver incorreto, o jogo indica se o número secreto é maior ou menor e solicita um novo palpite.
